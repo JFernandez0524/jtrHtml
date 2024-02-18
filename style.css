@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  background-color: #dc1b2e;
+  color: #fcfcfd;
+  border: 1px solid #dc1b2e;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.top-bar {
+  background-color: #dc1b2e;
+  color: #fcfcfd;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 200px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-style: normal;
+  height: 40px;
+  width: 100%;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  padding: 0px 200px;
+}
+.logo img {
+  height: auto;
+  width: 180px;
+}
+.top-navigation nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.top-navigation nav ul li {
+  padding: 24px 20px;
+  flex: 1 1 400px;
+}
+
+.top-navigation nav ul li a {
+  text-decoration: none;
+  color: #4a4c56;
+}
+
+header .contact-us-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  width: 183px;
+  border-radius: 4%;
+  padding: 20px 32px;
+}
+
+.contact-us-btn:hover {
+  background-color: #ff0019;
+  transition: background-color 0.15s, font-size 0.15s;
+  font-size: 18px;
+}
+.contact-us-btn a {
+  text-decoration: none;
+  color: #fcfcfd;
+}
+
+.contact-us-btn i {
+  font-size: 16px;
+}
+
+i {
+  margin-left: 10px;
+}
+
+/******************************************************************************container grid  **********************/
+
+.contaier-grid {
+  display: grid;
+}
+
+#hero {
+  background-color: green;
+}
+
+#about {
+  background-color: blue;
+}
+
+#blog {
+  background-color: red;
+}
+
+#contact {
+  background-color: yellow;
+}
