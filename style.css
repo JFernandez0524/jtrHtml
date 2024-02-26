@@ -114,13 +114,6 @@ header .btn i {
   grid-template-columns: 1fr 1fr;
 }
 
-#hero {
-  background-image: linear-gradient(rgba(115, 115, 115, 0.7), rgba(0, 0, 0)),
-    url(./assets/images/hero-image.png);
-
-  background-origin: border-box;
-}
-
 header {
   grid-area: header;
   min-height: max-content;
@@ -130,13 +123,17 @@ main {
   grid-area: main;
 }
 
-main > * {
-  height: fit-content;
-  padding: 5rem;
-}
-
 footer {
   grid-area: footer;
+}
+
+/************************************************************************************************************************************************************************************************************************ Sections Styles****/
+
+#hero {
+  background-image: linear-gradient(rgba(115, 115, 115, 0.7), rgba(0, 0, 0)),
+    url(./assets/images/hero-image.png);
+
+  background-origin: border-box;
 }
 
 .hero-flex-container {
@@ -171,15 +168,6 @@ footer {
   color: yellow;
 }
 
-/* .hero-headline-container > h1 {
-  font-size: 4rem;
-  text-transform: capitalize;
-}
-
-.hero-headline-container > h2 {
-  letter-spacing: 0.1em;
-} */
-
 .hero-section-form {
   flex: 1 1 0;
 }
@@ -207,7 +195,7 @@ footer {
 }
 
 .form-group input {
-  line-height: 1.5;
+  padding: 0.5rem 0;
 }
 
 .form-submit {
@@ -217,6 +205,15 @@ footer {
 .form-submit button {
   width: 100%;
   height: fit-content;
+}
+
+.form-submit p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#options {
+  flex: 1 1 0;
 }
 
 #about {
@@ -258,6 +255,19 @@ footer .copyright {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .flex-row {
+    justify-content: center;
+  }
+
+  .h1 {
+    text-align: center;
+    font-size: xx-large;
+  }
 }
 
 .flex-items-center {
@@ -277,4 +287,14 @@ footer .copyright {
 .btn-primary {
   background-color: var(--primary-color);
   color: #ffffff;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: aquamarine;
 }
