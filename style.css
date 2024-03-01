@@ -13,6 +13,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /* CSS Reset END  */
 
 :root {
@@ -58,23 +59,25 @@ button {
   height: auto;
   width: 180px;
 }
+
 .top-navigation nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: inline-flex;
 }
+
 .top-navigation nav ul li {
   padding: 24px 20px;
   flex: 1 1 400px;
 }
 
-.top-navigation nav ul li > a {
+.top-navigation nav ul li>a {
   text-decoration: none;
   color: #4a4c56;
 }
 
-.top-navigation nav ul li > a:hover {
+.top-navigation nav ul li>a:hover {
   padding: 1.2rem;
   background-color: #ff0019;
   color: #fcfcfd;
@@ -136,7 +139,7 @@ footer {
   background-origin: border-box;
 }
 
-#hero > div {
+#hero>div {
   padding: 2rem 0rem;
 }
 
@@ -148,11 +151,13 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
   /* For mobile phones: */
   .hero-flex-container {
     flex-direction: column;
   }
-  .hero-flex-container > * {
+
+  .hero-flex-container>* {
     flex: 1 1 0;
   }
 }
@@ -161,13 +166,13 @@ footer {
   flex: 1.5 1 0;
 }
 
-.hero-headline-container > h1,
-.hero-headline-container > h2 {
+.hero-headline-container>h1,
+.hero-headline-container>h2 {
   color: #ffffff;
   text-align: left;
 }
 
-.hero-headline-container > i {
+.hero-headline-container>i {
   font-size: 1rem;
   color: yellow;
 }
@@ -222,6 +227,22 @@ footer {
   max-width: 1920px;
 }
 
+#options .options-1 {
+  background-image: url(./assets/images/home-search-background.png);
+  background-repeat: no-repeat;
+  align-self: stretch;
+}
+
+#options .options-2 {
+  background-image: url(./assets/images/home-valuation-background.png);
+  background-repeat: no-repeat;
+}
+
+#options .options-3 {
+  background-image: url(./assets/images/home-connect-background.png);
+  background-repeat: no-repeat;
+}
+
 #options .card {
   max-width: 33.33%;
   flex: 1 1 auto;
@@ -237,6 +258,19 @@ footer {
 #options .card p {
   color: white;
 }
+
+/************************************************************************************************************ selling Section *********************/
+.selling {
+  background-color: #ffffff;
+}
+
+.selling .selling-process {
+  background-image: url(./assets/images/Vector69.png);
+  background-repeat: no-repeat;
+
+
+}
+
 #about {
   background-color: blue;
 }
@@ -266,11 +300,20 @@ footer .copyright {
 .copyright span {
   color: var(--primary-color);
 }
-/**********************************************************************************************************Utility classes **********************/
+
+/********************************************************************************************************************************************Utility classes **********************/
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: x-large;
 }
 
 .flex-row {
@@ -278,27 +321,6 @@ footer .copyright {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .flex-row {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #options .card {
-    max-width: 100%;
-  }
-
-  .h1 {
-    text-align: center;
-    font-size: xx-large;
-  }
-}
-
-.flex-items-center {
-  align-items: center;
 }
 
 .btn {
@@ -322,8 +344,30 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 400px;
+  max-width: 33.33%;
   padding: 2rem;
-  background-color: aquamarine;
+
   aspect-ratio: 1/1;
+}
+
+
+/******************************************************************************************************************************************** Media Queries **********************/
+
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .flex-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #options .card {
+    max-width: 100%;
+  }
+
+  .h1 {
+    text-align: center;
+    font-size: xx-large;
+  }
 }
