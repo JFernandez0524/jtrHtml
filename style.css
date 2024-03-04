@@ -135,7 +135,6 @@ footer {
 #hero {
   background-image: linear-gradient(rgba(115, 115, 115, 0.7), rgba(0, 0, 0)),
     url(./assets/images/hero-image.png);
-
   background-origin: border-box;
 }
 
@@ -247,6 +246,12 @@ footer {
   max-width: 33.33%;
   flex: 1 1 auto;
   text-align: center;
+  height: 392px;
+  margin: 0 auto;
+}
+
+#options .card p {
+  padding: 1rem 0;
 }
 
 #options .card h2 {
@@ -259,17 +264,34 @@ footer {
   color: white;
 }
 
-/************************************************************************************************************ selling Section *********************/
+/************************************************************************************************************ **************** selling Section *********************/
+
 .selling {
   background-color: #ffffff;
+}
+
+.selling .selling-heading h2 {
+  padding: 1rem 0;
 }
 
 .selling .selling-process {
   background-image: url(./assets/images/Vector69.png);
   background-repeat: no-repeat;
-
-
+  background-position: 8% 30%;
 }
+
+.selling .selling-process h2 {
+  font-size: large;
+}
+
+.selling .selling-process .selling-process-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
 
 #about {
   background-color: blue;
@@ -285,11 +307,45 @@ footer {
 
 /************************************************************************************************************ Footer *****************************/
 
-footer {
-  background-color: darkgray;
+#footer {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./assets/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fcfcfd;
 }
 
-footer .copyright {
+#footer .footer-logo-section {
+  background-color: #fcfcfd;
+}
+
+
+#footer .footer-logo-section .container {
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+#footer .footer-divider {
+  padding: 1rem 0;
+  border-bottom: 1px solid grey;
+}
+
+#footer .footer-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: 1.5rem;
+}
+
+#footer .footer-content .footer-link-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .footer-content ul {
+  list-style: none;
+}
+
+#footer .footer-copyright {
   background-color: #070707;
   color: white;
   text-align: center;
@@ -297,13 +353,20 @@ footer .copyright {
   font-size: 0.5rem;
 }
 
-.copyright span {
+#footer .footer-mls-disclosure .mls-disclosure img {
+  height: 70px;
+  float: left;
+  padding: 0 .5rem .5rem 0;
+}
+
+#footer .footer-copyright span {
   color: var(--primary-color);
 }
 
 /********************************************************************************************************************************************Utility classes **********************/
 
 .container {
+
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -370,4 +433,21 @@ footer .copyright {
     text-align: center;
     font-size: xx-large;
   }
+
+  .selling-process .card {
+    aspect-ratio: 0;
+  }
+
+  .selling-process-section {
+    max-width: 100%;
+  }
+
+  .selling .selling-process {
+    background-image: linear-gradient(rgba(115, 115, 115, 0.7), rgba(0, 0, 0)), url(./assets/images/Vector69.png);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
 }
